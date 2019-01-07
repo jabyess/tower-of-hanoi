@@ -1,3 +1,5 @@
+include ./mixins/tower
+
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -5,6 +7,10 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
-    script(defer=true, src="../js/index.js")
-    link(href="../sass/main.scss")
+    script(defer=true, src="../js/index.ts")
+    link(rel="stylesheet", href="../sass/main.scss")
   body
+    h1.heading tower of hanoi
+    .tower-container
+      - for(let i = 1; i <= 3; i++)
+        +tower(i)

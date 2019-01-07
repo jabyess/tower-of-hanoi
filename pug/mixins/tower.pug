@@ -1,0 +1,11 @@
+mixin tower(id)
+  .tower(id=`tower-${id}`, data-index=id)
+    .pole
+    .disc-container
+    .base
+
+
+mixin discs
+  .disc#disc-sm(data-disc-size="1")
+  .disc#disc-md(data-disc-size="2")
+  .disc#disc-lg(data-disc-size="3")

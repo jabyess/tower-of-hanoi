@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+}
+.tower-container {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.tower {
+  margin: 10px;
+  position: relative;
+  .pole {
+    height: 150px;
+    width: 20px;
+    background-color: $pole-color;
+    margin: auto;
+    @include border-radius();
+  }
+
+  .disc {
+    height: $disc-height;
+    margin: auto;
+    @include border-radius();
+  }
+
+  .disc-container {
+    position: absolute;
+    bottom: $base-height;
+    width: $base-width;
+  }
+
+  #disc-1 {
+    width: $base-width;
+    background-color: green;
+  }
+
+  #disc-2 {
+    width: $base-width - $disc-width-step;
+    background-color: orange;
+  }
+  
+  #disc-3 {
+    width: $base-width - $disc-width-step * 2;
+    background-color: red;
+  }
+
+  #disc-4 {
+    width: $base-width - $disc-width-step * 3;
+    background-color: blue;
+  }
+  
+  #disc-5 {
+    width: $base-width - $disc-width-step * 4;
+    background-color: purple;
+  }
+
+  .base {
+    background-color: $pole-color;
+    width: $base-width;
+    height: 20px;
+    border-radius: 5px;
+  }
+}
+

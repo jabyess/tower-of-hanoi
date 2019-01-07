@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "pug": "^2.0.3",
-    "sass": "^1.15.3"
+    "sass": "^1.15.3",
+    "typescript": "^3.2.2"
   },
   "name": "tower-of-hanoi",
   "version": "1.0.0",
