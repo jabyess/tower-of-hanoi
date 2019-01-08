@@ -71,11 +71,13 @@ function _doMove(e: Event) {
 		let from = gameData.towers[gameData.activeIndex]
 		let to = gameData.towers[currentIndex]
 
-		// validate size
+		// validate sizes
 		if(_validateMove(from, to)) {
+			// perform actual move in arrays
 			let disc = from.shift()
 			gameData.towers[currentIndex].unshift(disc)
 			_deactivate()
+			// trigger refresh dom
 			syncDiscsToDom()
 		}
 		else {
@@ -84,7 +86,6 @@ function _doMove(e: Event) {
 
 	}
 
-	// trigger refresh dom
 
 }
 
