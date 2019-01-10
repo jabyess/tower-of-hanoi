@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer="defer" src="/js.d744eb43.js"></script>
+    <link rel="stylesheet" href="/main.31b31d70.css">
+  <script src="/main.31b31d70.js"></script></head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <h1 class="heading">tower of hanoi</h1>
+        <form class="start-form">
+          <input class="start-form__textfield" id="disc-count" type="number" min="3" max="6" value="3">
+          <label for="disc-count">Number of discs to start with (3-6)</label>
+          <div>
+            <button id="start-button">Start game</button>
+          </div>
+        </form>
+        <div class="win-container hidden">
+          <h2>Congratulations!</h2>
+          <p>You won in <span id="move-count"></span> moves!</p>
+          <button id="restart">Play again?</button>
+        </div>
+        <div class="tower-container">
+          <div class="tower" id="tower-1" data-index="0">
+            <div class="pole"></div>
+            <div class="disc-container"></div>
+            <div class="base"></div>
+          </div>
+          <div class="tower" id="tower-2" data-index="1">
+            <div class="pole"></div>
+            <div class="disc-container"></div>
+            <div class="base"></div>
+          </div>
+          <div class="tower" id="tower-3" data-index="2">
+            <div class="pole"></div>
+            <div class="disc-container"></div>
+            <div class="base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
