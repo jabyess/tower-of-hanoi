@@ -14,6 +14,8 @@ replicate a basic virtual dom type solution, where I keep the state in one place
 dom. It was pretty straightforward. Maybe I could implement a more robust
 solution though.
 
+Live version here: https://jabyess.github.io/tower-of-hanoi/
+
 Todo:
 
 * animations on move
