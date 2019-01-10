@@ -10,7 +10,9 @@ html(lang="en")
     script(defer=true, src="../js/index.ts")
     link(rel="stylesheet", href="../sass/main.scss")
   body
-    h1.heading tower of hanoi
-    .tower-container
-      - for(let i = 1; i <= 3; i++)
-        +tower(i)
+    .container
+      .game-container
+        h1.heading tower of hanoi
+        include ./partials/start-form
+        include ./partials/win-container
+        include ./partials/game-container

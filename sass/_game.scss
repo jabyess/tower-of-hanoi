@@ -1,18 +1,35 @@
 body {
   font-family: sans-serif;
 }
-.tower-container {
+
+.container {
+  // margin-top: 50px;
   display: flex;
+  height: 100vh;
+  align-items: center;
   justify-content: center;
+}
+
+.tower-container {
+  // display: flex;
+  display: none;
+  justify-content: center;
+  @include mobile() {
+    flex-direction: column;
+  }
 }
 
 .heading {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .tower {
   margin: 10px;
   position: relative;
+  @include mobile(){
+    margin: 10px auto;
+  }
 
   &.active {
     .base {
@@ -64,6 +81,11 @@ body {
     width: $base-width - $disc-width-step * 4;
     background-color: purple;
   }
+  
+  #disc-6 {
+    width: $base-width - $disc-width-step * 5;
+    background-color: orangered;
+  }
 
   .base {
     background-color: $pole-color;
@@ -73,3 +95,13 @@ body {
   }
 }
 
+
+.win-container {
+  text-align: center;
+  h2 {
+    margin-bottom: 3px;
+  }
+  p {
+    margin-top: 5px;
+  }
+} 
